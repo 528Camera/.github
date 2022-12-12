@@ -9,7 +9,7 @@
 Каждый компонент можно развернуть на отдельной машине; все компоненты связаны через локальную сеть.
 
 ## Обмен данными
-Данные сериализуются в бинарном формате [Google Protocol Buffers](https://developers.google.com/protocol-buffers). Формат сообщения определяется в **[frame_data.proto](https://github.com/528Camera/.github/blob/main/profile/frame_data.proto)** и содержит следующие поля:
+Данные сериализуются в бинарном формате [Google Protocol Buffers](https://developers.google.com/protocol-buffers). Формат сообщения определяется в **[frame_data.proto](https://github.com/528Camera/.github/blob/main/profile/frame_data.proto) ([генерация кода](https://github.com/528Camera/.github/wiki/Proto))** и содержит следующие поля:
 * Номер версии системы (*int32 version*) - для обеспечения совместимости;
 * Изображение в виде байтовой строки (*bytes image*), закодированное в формате JPG.
 * Опционально: временная метка кадра (*google.protobuf.Timestamp time*);
